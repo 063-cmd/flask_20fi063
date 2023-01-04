@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet"
+href="/static/css/style.css">
+<title>HELLO</title>
+</head>
+<body>
+<h1>Hello from index.html (Overline)</h1>
+<p class="hello">Violet Color</p>
+<p>Hello, World!<p>
+{% for x in list %} <!--リスト表示-->
+<li>{{x}}</li>
+{% endfor %}
+<p>{{"好きな食べ物: %s 好きな家具: %s 好きな場所: %s" % (dictionary["好きな食べ物"],dictionary["好きな家具"],dictionary["好きな場所"]) }}<p> 
+{% if data > 0 %}
+<p>dataは0より大きいです</p>>
+{% elif data == 0 %}
+<p>dataは0です</p>
+{% else %}
+<p>dataは0より小さいです</p>
+{% endif %}
+</body>
